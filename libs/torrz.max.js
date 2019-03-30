@@ -1,4 +1,4 @@
-var $ = jQuery = require('jquery')(window);
+window.$ = window.jQuery = require("jquery");
 $(function(){
     alert("showbox")
 });
