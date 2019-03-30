@@ -1,0 +1,33 @@
+{
+  "name": "torrz",
+  "version": "0.0.0-alpha.1",
+  "description": "HTML 5 Elegant torrent client for all users",
+  "main": "torrz.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nexasoft/Torrz.git"
+  },
+  "keywords": [
+    "torrz",
+    "torrent",
+    "client",
+    "nexa"
+  ],
+  "author": "Nexasoft",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/nexasoft/Torrz/issues"
+  },
+  "homepage": "https://github.com/nexasoft/Torrz#readme",
+  "devDependencies": {
+    "electron": "^5.0.0-beta.7",
+    "electron-nightly": "^6.0.0-nightly.20190311"
+  },
+  "dependencies": {
+    "jquery": "^3.3.1",
+    "webtorrent": "^0.103.1"
+  }
+}
