@@ -1,0 +1,45 @@
+icon {
+    position: relative;
+    display: block;
+    width: 80px;
+    height: 90px;
+    background-color: #E14045;
+    border-radius: 5px;
+    margin: 0 auto;
+    top: calc(50% - 60px);
+}
+
+icon::after {
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 64px;
+    overflow: hidden;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 16px 16px 0;
+    border-color: transparent #e2e1e0 #a2191e transparent;
+    -moz-border-radius-bottomleft: 4px;
+    -webkit-border-bottom-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    background-color: #a2191e;
+}
+
+icon::before {
+    position: absolute;
+    bottom: 10px;
+    left: -5px;
+    padding: 2px 10px 2px 10px;
+    font-size: 12px;
+    background: #1a1a1a;
+    content: 'file';
+    content: attr(filetype);
+}
+
+icon[href*='.JS']{
+    background-color: #1E7145;
+}
+icon[href*='.JS']::after {
+    border-bottom-color: #092014;
+}

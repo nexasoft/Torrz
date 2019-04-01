@@ -6,18 +6,15 @@ const url = require('url')
 
 let win;
 
-function createWindow () {
-  // Create the browser window.
+function createWindow (){
   win = new BrowserWindow({
     backgroundColor: '#000000',
     width: 800, 
     height: 600,
-    titleBarStyle: 'hidden',
-    frame: false,
+    titleBarStyle: 'hiddenInset',
+    frame: true,
     show: false,
     webPreferences: {
-      contextIsolation: true,
-      nodeIntegration: true,
       preload: './preload.js'
   }})
 
