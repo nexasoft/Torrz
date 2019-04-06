@@ -4,17 +4,20 @@ const { app, BrowserWindow } = require('electron')
 const path = require('path')
 const url = require('url')
 
+require(path.join(__dirname, 'server.js'))
+
 let win;
 
 function createWindow (){
   win = new BrowserWindow({
-    backgroundColor: '#000000',
+    backgroundColor: '#FFFFFF',
     width: 800, 
     height: 600,
     titleBarStyle: 'hiddenInset',
     frame: true,
     show: false,
     webPreferences: {
+      nodeIntegration: true,
       preload: './preload.js'
   }})
 
@@ -23,8 +26,9 @@ function createWindow (){
   win.setMenu(null)
 
   win.loadURL(url.format({
-    pathname: path.join(__dirname, 'index.html'),
-    protocol: 'file:',
+    /* pathname: path.join(__dirname, 'index.html'), */
+    pathname: 'localhost:1922/index.html',
+    protocol: 'http:',
     slashes: true
   }))
 

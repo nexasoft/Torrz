@@ -23,10 +23,15 @@
   },
   "homepage": "https://github.com/nexasoft/Torrz#readme",
   "devDependencies": {
-    "electron": "^5.0.0-beta.7"
+    "@fortawesome/fontawesome-free": "^5.8.1",
+    "electron": "^5.0.0-beta.7",
+    "electron-nightly": "^6.0.0-nightly.20190311",
+    "webtorrent": "^0.103.1"
   },
   "dependencies": {
+    "connect": "^3.6.6",
     "jquery": "^3.3.1",
-    "requirejs": "^2.3.6"
+    "npm": "^6.9.0",
+    "serve-static": "^1.13.2"
   }
 }

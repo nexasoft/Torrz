@@ -3,11 +3,14 @@
     padding: 0;
 }
 
+
 body {
     user-select: none;
     background-size: cover;
     background: linear-gradient(to right, #936b78 0%, #6a6f91 100%);
+    /*background: #f5f5f4;*/
     overflow: hidden;
+    border: 1px solid #020202;
 }
 
 header {
@@ -26,6 +29,16 @@ header {
     border-bottom: 1px solid #b1aeb1;
     color: #4d494d;
     -webkit-app-region: drag;
+}
+
+header.dark {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.0, #4D4B47, color-stop(1.0, #3F3E3A)));
+    background: -webkit-linear-gradient(top, #4D4B47, #3F3E3A);
+    border-top: 1px solid #8F8E8B;
+    border-bottom: 1px solid #000000;
+    -webkit-app-region: drag;
+    color: #FFFFFF;
+    /*background: #363531;*/
 }
 
 header > h1 {
@@ -73,14 +86,13 @@ section {
     position: relative;
     float: right;
     width: calc(100% - 50px);
-    height: calc(100% - 40px);
-    overflow-x: auto;
+    height: calc(100vh - 80px);
     word-wrap: break-word;
 }
 
 .sub-header {
     position: relative;
-    float: right;
+    float: left;
     width: 100%;
     height: 30px;
     color: #000;
@@ -104,7 +116,11 @@ section {
 
 section > ul {
     position: relative;
+    float: left;
     width: 100%;
+    height: 100%;
+    overflow-x: auto;
+    word-wrap: break-word;
 }
 
 section > ul > li {
@@ -122,7 +138,7 @@ section > ul > li > torrent {
     margin: 1rem;
     border-radius: 5px;
     box-sizing: border-box;
-    color: #eee;
+    color: #000;
     background: #e2e1e0;
     line-height: 30px;
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
