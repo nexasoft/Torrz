@@ -30,7 +30,7 @@
   },
   "dependencies": {
     "connect": "^3.6.6",
-    "jquery": "^3.3.1",
+    "jquery": ">=3.4.0",
     "npm": "^6.9.0",
     "serve-static": "^1.13.2"
   }
