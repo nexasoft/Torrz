@@ -1,0 +1,1 @@
+const WebTorrent = require.main.require('webtorrent');

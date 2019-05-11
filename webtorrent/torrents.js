@@ -52,7 +52,7 @@ function onTorrent (torrent) {
 }
 
 function log (str) {
-  var p = document.createElement('p')
-  p.innerHTML = str
-  document.querySelector('.log').appendChild(p)
+  var p = document.createElement('p');
+  p.innerHTML = str;
+  document.querySelector('.log').appendChild(p);
 }

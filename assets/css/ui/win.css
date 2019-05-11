@@ -1,0 +1,119 @@
+font-family: "Segoe UI", sans-serif;
+background: #fff;
+color: #FFF;
+border: 1px solid #48545c;
+overflow-y: hidden;
+
+header {
+    position: relative;
+    float: left;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    -webkit-app-region: drag;
+    background: #1A2933;
+}
+
+header > .app-title {
+    position: relative;
+    float: left;
+    margin-left: 30px;
+}
+
+header > .win-btn {
+    position: absolute;
+    display: block !important;
+    top: 0;
+    right: 0;
+}
+
+header > .win-btn > ul > li {
+    display: inline;
+}
+
+header > .win-btn > ul > li > a {
+    position: relative;
+    float: left;
+    font-family: "Segoe MDL2 Assets";
+    font-size: 10px;
+    text-align: center;
+    width: 50px;
+    height: 32px;
+    cursor: default;
+    color: #BBB;
+}
+header > .win-btn > ul > li > a:hover {
+    background: rgba(255,255,255,0.2);
+    color: #FFF;
+}
+header > .win-btn > ul > li > a.close:hover {
+    background: #E81123 !important;
+}
+header > .win-btn > ul > li > a.restore {
+    display: none;
+}
+main {
+    position: relative;
+    float: left;
+    height: 100%;
+    width: 100%;
+}
+
+main > aside {
+    position: relative;
+    float: left;
+    background: #f5f5f4;
+    width: 50px;
+    height: calc(100vh - 50px);
+}
+
+aside > ul > li {
+    list-style-type: none;
+}
+  
+aside > ul > li > a {
+    position: relative;
+    float: left;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background: transparent;
+    color: #000;
+    border-bottom: 1px solid #b1aeb1;
+}
+
+.button-menu {
+    position: absolute;
+    bottom: 0px;
+}
+  
+.button-menu > li > a {
+    border-top: 1px solid #b1aeb1;
+}
+  
+main > section {
+    position: relative;
+    float: right;
+    width: calc(100% - 50px);
+    height: 100vh;
+      
+}
+  
+section > menu {
+    position: relative;
+    float: left;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    color: #000;
+    border-left: 1px solid #ddd;
+    background: #ccc;
+}
+  
+section > article.torr-list {
+    position: relative;
+    float: left;
+    width: 100%;
+    height: calc(100% - 30px);
+}

@@ -4,66 +4,89 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet/less" type="text/css" href="style.less" />
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/file-type.css">
-
-    <title>Torrz - List</title>
+    <link type="text/css" rel="stylesheet" href="assets/css/global.css">
+    <link type="text/less" rel="stylesheet" href="assets/css/theme.less">
+    <link type="text/less" rel="stylesheet" href="assets/css/awesome-icons.less">
+    <title>Torrz – A modern torrent client based in HTML5</title>
 </head>
-<body>
-    <header class="">
-        <h1>Torrz - Listing torrents</h1>
-        <div class="right">
-            <button class="btn2" id="main-add-torrent" torr="magnet:?xt=urn:btih:e0765714ef9b56b8d340d91675dfa1e9a18304ca&dn=%5bACESSE%20COMANDOTORRENTS.COM%5d%20The%20Flash%20S05E15%20%5b720p%5d%20%5bWEB-DL%5d%20%5bDUAL%5d&tr=udp%3a%2f%2ftracker.openbittorrent.com%3a80%2fannounce&tr=udp%3a%2f%2ftracker.opentrackr.org%3a1337%2fannounce&tr=udp%3a%2f%2ftracker.coppersurfer.tk%3a6969%2fannounce&tr=udp%3a%2f%2fglotorrents.pw%3a6969%2fannounce&tr=udp%3a%2f%2ftracker4.piratux.com%3a6969%2fannounce&tr=udp%3a%2f%2fcoppersurfer.tk%3a6969%2fannounce&tr=http%3a%2f%2ft2.pow7.com%2fannounce&tr=udp%3a%2f%2ftracker.yify-torrents.com%3a80%2fannounce&tr=http%3a%2f%2fwww.h33t.com%3a3310%2fannounce&tr=http%3a%2f%2fexodus.desync.com%2fannounce&tr=http%3a%2f%2ftracker.coppersurfer.tk%3a6969%2fannounce&tr=http%3a%2f%2fbt.careland.com.cn%3a6969%2fannounce&tr=http%3a%2f%2fexodus.desync.com%3a6969%2fannounce&tr=udp%3a%2f%2ftracker.publicbt.com%3a80%2fannounce&tr=udp%3a%2f%2ftracker.istole.it%3a80%2fannounce&tr=http%3a%2f%2ftracker.blazing.de%2fannounce&tr=udp%3a%2f%2ftracker.openbittorrent.com%3a80%2fannounce&tr=http%3a%2f%2ftracker.yify-torrents.com%2fannounce&tr=udp%3a%2f%2ftracker.prq.to%2fannounce&tr=udp%3a%2f%2ftracker.1337x.org%3a80%2fannounce&tr=udp%3a%2f%2f9.rarbg.com%3a2740%2fannounce&tr=udp%3a%2f%2ftracker.ex.ua%3a80%2fannounce&tr=udp%3a%2f%2fipv4.tracker.harry.lu%3a80%2fannounce&tr=udp%3a%2f%2f12.rarbg.me%3a80%2fannounce&tr=udp%3a%2f%2ftracker.publicbt.com%3a80%2fannounce&tr=udp%3a%2f%2ftracker.opentrackr.org%3a1337%2fannounce&tr=udp%3a%2f%2f11.rarbg.com%2fannounce&tr=udp%3a%2f%2ftracker.ccc.de%3a80%2fannounce&tr=udp%3a%2f%2ffr33dom.h33t.com%3a3310%2fannounce&tr=udp%3a%2f%2fpublic.popcorn-tracker.org%3a6969%2fannounce"><i class="fas fa-plus"></i> New Torrents</button>
-        </div>
-    </header>
-    <main>
-        <aside class="main-left-bar">
+<body class="torrz-body">
+    <header class="main-header">
+        <span class="app-title"><h2>TorrZ</h2></span>
+        <button class="btn torrz-add-btn right"><i class="fas fa-plus"></i> New Torrent...</button>
+        <nav class="win-btn">
             <ul>
-                <li><a href="layout/all.html"><i class="fas fa-arrow-down"></i><i class="fas fa-arrow-up"></i></a></li>
+                <li><a href="">&#xE921;</a></li>
+                <li><a href="">&#xE922;</a></li>
+                <li><a href="" class="restore">&#xE923;</a></li>
+                <li><a href="" class="close">&#xE8BB;</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="torrz-add animate-top">
+        <form method="POST" class="add-torrent">
+            <span class="tTitle">Add torrent magnet:</span>
+            <input type="text" placeholder="Magnet:">
+            <button class="btn">Adicionar...</button>
+        </form>
+    </div>
+    <main class="content">
+        <aside class="left-bar">
+            <ul class="main-menu">
+                <li><a href="index.html#torr-list"><i class="fas fa-arrow-down"></i><i class="fas fa-arrow-up"></i></a></li>
                 <li><a href="layout/downloads.html"><i class="fas fa-arrow-down"></i></a></li>
                 <li><a href=""><i class="fas fa-check"></i></a></li>
                 <li><a href=""><i class="fas fa-play"></i></a></li>
-                <li><a href=""><i class="fas fa-pause"></i></a></li>
+                <li><a href="" class="pause-btn"><i class="fas fa-pause"></i></a></li>
                 <li><a href=""><i class="fas fa-book-open"></i><small class="tag beta-tag">BETA</small></a></li>
             </ul>
             <ul class="button-menu">
                 <li><a href="" class="pref-pane-button"><i class="fas fa-cog"></i></a></li>
             </ul>
         </aside>
-        <section class="main-container torr-list">
-            <div class="sub-header">
-                
-                <div class="right btn-group">
-                    <button class="btn"><i class="fas fa-play"></i></button>
-                    <button class="btn"><i class="fas fa-pause"></i></button>
-                    <button class="btn"><i class="fas fa-pause"></i></button>
-                    <button class="btn"><i class="fas fa-pause"></i></button>
-                    <button class="btn"><i class="fas fa-trash"></i></button>
+        <section class="container">
+            <menu class="top-menu-btns">
+                <span class="left">
+                    TorrZ > All Downloads ->
+                </span>
+                <div class="btn-group">
+                    <button class="btn play-btn"><i class="fas fa-play"></i></button>
+                    <button class="btn pause-btn"><i class="fas fa-pause"></i></button>
+                    <button class="btn remove-btn"><i class="fas fa-trash"></i></button>
                 </div>
-            </div>
-            <ul id="drop">
-                <li torrent-id="0">
-                    <torrent magnet="magnet://uri/" hash="{hashcode}">
-                        <icon href="file.png" filetype=".PNG"></icon>
-                        <div class="torr-title">
-                            <span>Add Torrent</span>
-                        </div>
-                    </torrent>
-                </li>
-                <li torrent-id="1">
-                    <torrent magnet="magnet://uri/" hash="{hashcode}">
-                        <icon href="file.png" filetype=".PNG"></icon>
-                        <div class="torr-title">
-                            <span>Add Torrent</span>
-                        </div>
-                    </torrent>
-                </li>
-            </ul>
+            </menu>
+            <article class="torr-list" id="torr-list">
+
+            </article>
+            <footer class="torr-details">
+                <h3>Torrent Name: %torrentname%</h3>
+                <table class="prop-tb">
+                    <tr>
+                        <th>Propriedade</th>
+                        <th>|</th>
+                        <th>Valor</th>
+                    </tr>
+                    <tr>
+                        <td>000</td>
+                        <td>000</td>
+                        <td>000</td>
+                    </tr>
+                </table>
+            </footer>
+        </section>
+        <section class="container hidden page2">
+
         </section>
     </main>
-<script type="text/javascript" src="libs/torrz.max.js"></script>
+
+<script type="text/javascript" src="libs/jquery.mdl.js"></script>
+<script type="text/javascript">
+    less = { env: 'production',log_level: 0 };
+</script>
 <script type="text/javascript" src="libs/less.min.js"></script>
-<script type="text/javascript" src="webtorrent/torrents.js"></script>
+<script type="text/javascript" src="common/__theme.js"></script>
+<script type="text/javascript" src="libs/global.lib.js"></script>
+<script type="text/javascript" src="common/__torrz.js"></script>
+<script type="text/javascript" src="common/__global.js"></script>
+<script type="text/javascript" src="common/__functions.js"></script>
 </body>
 </html>

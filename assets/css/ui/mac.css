@@ -1,0 +1,348 @@
+background: linear-gradient(to right, #936b78 0%, #6a6f91 100%);
+font-family:".LucidaGrandeUI", "Lucida Grande", "Lucida sans unicode";
+header {
+    position: relative;
+    float: left;
+    width: 100%;
+    height: 40px;
+    z-index: 9999999;
+    line-height: 40px;
+    /*background: -webkit-gradient(linear, left top, left bottom, color-stop(0.0, #ebebeb, color-stop(1.0, #d5d5d5)));
+    background: -webkit-linear-gradient(top, #ebebeb, #d5d5d5);
+    background: -moz-linear-gradient(top, #ebebeb, #d5d5d5);
+    background: -ms-linear-gradient(top, #ebebeb, #d5d5d5);
+    background: -o-linear-gradient(top, #ebebeb, #d5d5d5);
+    background: linear-gradient(top, #ebebeb, #d5d5d5);*/
+    border-top: 1px solid #f3f1f3;
+    border-bottom: 1px solid #b1aeb1;
+    box-shadow: inset 0 1px 0 #f5f4f5;
+
+    background-color: #e8e6e8;
+    background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0,#e8e6e8),color-stop(100%,#d1cfd1));
+    background-image: -webkit-linear-gradient(top,#e8e6e8 0,#d1cfd1 100%);
+    background-image: linear-gradient(to bottom,#e8e6e8 0,#d1cfd1 100%);
+
+    color: #4d494d;
+    -webkit-app-region: drag;
+}
+
+header > .app-title {
+    position: relative;
+    float: left;
+    margin-left: 75px;
+}
+
+.torrz-add-btn {
+  position: relative;
+  top: 10px;
+}
+
+main {
+  position: relative;
+  float: left;
+  height: 100%;
+  width: 100%;
+}
+
+main > aside {
+  position: relative;
+  float: left;
+  background: #f5f5f4;
+  width: 50px;
+  height: calc(100vh - 40px);
+}
+
+aside > ul > li {
+  list-style-type: none;
+}
+
+aside > ul > li > a {
+  position: relative;
+  float: left;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  background: transparent;
+  color: #000;
+  border-bottom: 1px solid #b1aeb1;
+}
+
+.button-menu {
+  position: absolute;
+  bottom: 0px;
+}
+
+.button-menu > li > a {
+  border-top: 1px solid #b1aeb1;
+}
+
+main > section {
+    position: relative;
+    float: right;
+    width: calc(100% - 50px);
+    height: 100vh;
+    
+}
+
+section > menu {
+    position: relative;
+    float: left;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    color: #000;
+    border-left: 1px solid #ddd;
+    background: #ccc;
+}
+
+section > article.torr-list {
+  position: relative;
+  float: left;
+  width: 100%;
+  height: calc(100% - 30px);
+}
+
+torrent {
+  position: relative;
+  float: left;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  background: #e2e1e0;
+  word-wrap: break-word;
+  word-break: break-all;
+  border-radius: 5px;
+  color: #000;
+  width: 150px;
+  margin: 1rem;
+  height: 200px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+torrent:hover{
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+torrent > .torr-progress {
+  position: absolute;
+  top: calc(100% - 75px);
+  width: 100%;
+}
+
+torrent > .torr-title {
+  position: absolute;
+  display: block;
+  top: calc(100% - 70px);
+  width: 100%;
+  color: #ffff;
+  height: 70px;
+  text-align: center;
+  font-size: 12px;
+  padding: 10px;
+  color: #fff;
+  background: rgba(0,0,0,0.6);
+  word-wrap: break-word;
+  overflow:hidden !important;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  word-break: keep-all;
+}
+
+torrent.retrieving {
+  text-align: center;
+  word-wrap: normal;
+  word-break: keep-all;
+}
+
+.selected {
+  background: deepskyblue;
+}
+
+.tag {
+  position: absolute;
+  top: 1px;
+  font-size: 8px;
+  background: #333;
+  color: #fff;
+  height: 12px;
+  left: -1px;
+  padding: 0 5px 0 5px;
+  line-height: 12px;
+}
+
+.btn-2 {
+    text-decoration: none;
+    font-family:".LucidaGrandeUI", "Lucida Grande", "Lucida sans unicode";
+    color: black;
+    font-size: 11px;
+    padding: 0px 5px 0px 5px;
+    height: 20px;
+    border:1px solid #9C9C9C;
+    display: inline-block;
+    background-image: -webkit-linear-gradient(
+    #ffffff 0%, #F6F6F6 	30%, 
+    #F3F3F3 45%, #EDEDED 	60%, 
+    #eeeeee 100%);
+    border-radius: 3px;
+    box-shadow: 0px 0px 1px rgba(0,0,0,0.20);
+    outline: 0;
+}
+.btn-2:active {
+  border-color:#705ebb;
+  background-image:-webkit-linear-gradient(
+  #acc5e9 0%, 		#a3c0f2 18%, 
+  #61a0ed 39%,		#55a3f2 70%, 
+  #82c2f1 91.72%, 	#9AD2F2 100%); 
+  box-shadow: 0px 0px 1px rgba(0,0,0,0.65);	
+}
+
+.btn-2:disabled {
+  color: #999!important;
+background-image: -webkit-linear-gradient(#fbf8f8 0%, #f0f0f0 30%, #e3e3e3 45%, #d7d7d7 60%, #cbc9c9 100%);
+}
+
+.btn-group {
+  position: relative;
+  float: right;
+  margin-right: 10px;
+  vertical-align: middle;
+  -webkit-app-region: no-drag;
+}
+
+.btn-group > .btn:first-child {
+  border-radius: 4px 0 0 4px;
+}
+
+.btn-group > .btn:last-child {
+  border-radius: 0 4px 4px 0;
+  border-right: 0px;
+}
+
+.btn-group > .btn {
+  margin:-3px;
+  border-radius: 0px;
+  border-right: 1px solid #333;
+}
+
+.btn {
+  color: #333;
+  background-color: #fcfcfc;
+  background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0,#fcfcfc),color-stop(100%,#f1f1f1));
+  background-image: -webkit-linear-gradient(top,#fcfcfc 0,#f1f1f1 100%);
+  background-image: linear-gradient(to bottom,#fcfcfc 0,#f1f1f1 100%);
+  border-color: #c2c0c2 #c2c0c2 #a19fa1;
+  display: inline-block;
+  padding: 3px 8px 3px 8px;
+  border-radius: 4px 4px 4px 4px;
+  line-height: 1.4;
+  white-space: nowrap;
+  background-image: none;
+  box-shadow: 0 1px 1px rgba(0,0,0,.06);
+  outline: 0;
+}
+
+.btn:active {
+  background: #333;
+  color: #fff;
+}
+
+
+.torrz-add {
+    position: absolute;
+    display: none;
+    right: 10px;
+    top: 40px;
+    padding: 10px;
+    width: 300px;
+    height: 150px;
+    z-index: 913;
+    border-radius: 0px 0px 5px 5px;
+    justify-content: center;
+    box-sizing: border-box;
+    background: #e2e1e0;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.torrz-add > form > input[type='text']{
+  position: relative;
+  float: left;
+  padding: 10px;
+  width: calc(100% - 40px);
+  margin: 10px;
+  outline: 0;
+}
+.torrz-add > form > button {
+  position: relative;
+  float: left;
+  width: calc(100% - 18px);
+  margin: 10px;
+  padding: 10px;
+}
+
+.torr-details {
+  position: absolute;
+  background: #ccc;
+  width: 100%;
+  height: 250px;
+  bottom: 0px;
+  padding: 10px;
+  display: none;
+  animation-name: animatebottom;
+  animation-duration: 1s
+}
+
+.prop-tb {
+  border-collapse: collapse;
+}
+
+.prop-tb td, .prop-tb th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.prop-tb tr:nth-child(even){background-color: #f2f2f2;}
+
+.prop-tb tr:hover {background-color: #ddd;}
+
+.loader {
+  position: relative;
+  float: left;
+  margin: auto;
+  border: 10px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 10px solid #3498db;
+  width: 30px;
+  height: 30px;
+  -webkit-animation: spin .5s linear infinite; /* Safari */
+  animation: spin .5s linear infinite;
+}
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.animate-top {
+    animation-name: animatetop;
+    animation-duration: 1s;
+}
+
+@keyframes animatetop { 
+    from{ top:-40px; opacity:0 } 
+    to{ top:40px; opacity:1}
+  }
+  
+  .animate-bottom {
+    position: relative;
+    -webkit-animation-name: animatebottom;
+    -webkit-animation-duration: 1s;
+    animation-name: animatebottom;
+    animation-duration: 1s
+  }
+  
+  
+  @keyframes animatebottom { 
+    from{ bottom:-100px; opacity:0 } 
+    to{ bottom:0; opacity:1 }
+  }
