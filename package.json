@@ -33,7 +33,7 @@
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.8.1",
-    "webtorrent": "^0.103.1",
+    "webtorrent": "^0.107.6",
     "connect": "^3.6.6",
     "jquery": ">=3.4.0",
     "npm": "^6.9.0",
