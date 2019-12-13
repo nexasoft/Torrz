@@ -29,14 +29,14 @@
   "devDependencies": {
     "electron": "^4.1.4",
     "electron-packager": "^13.1.1",
-    "npm": "^6.9.0"
+    "npm": "^6.13.4"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.8.1",
     "webtorrent": "^0.103.1",
     "connect": "^3.6.6",
     "jquery": ">=3.4.0",
-    "npm": "^6.9.0",
+    "npm": "^6.13.4",
     "serve-static": "^1.13.2"
   }
 }
